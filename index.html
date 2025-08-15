@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header id="header">
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label for="nav-toggle" class="nav-button">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+        </label>
+
+        <nav>
+            <div class="left"> Ankita's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <div class="intro"> Hi my name is <span class="purple">Ankita</span><br> and I am a passionate<br>
+                </div><span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img src="code1.jpg" alt="code1">
+            </div>
+        </section>
+    </main>
+    <!----------------------------------About--------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="mypic.jpg" alt="Ankita's photo">
+
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p class="para">I’m Ankita — a passionate Frontend Developer with a strong focus on building responsive,
+                        user-friendly, and visually appealing web applications. With hands-on experience in HTML, CSS,
+                        JavaScript, and modern frameworks like React, I enjoy
+                        turning design concepts into fully functional websites</p>
+
+                    <div class="title">
+                        <p class="tab-links active-link " onclick="opentab(event ,'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event,'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event,'education')">Education</p>
+                    </div>
+                    <div class="content active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML & CSS </span><br> Building structured and styled web pages</li>
+                            <li><span>JavaScript (ES6+) </span><br> Adding interactivity to websites </li>
+                            <li><span>React.js</span><br>Building dynamic user interfaces</li>
+                            <li><span>UI/UX </span><br> Designing Web interfaces </li>
+                        </ul>
+                    </div>
+                    <div class="content" id="experience">
+                        <ul>
+                            <li><span>Internship - 2025</span><br>Frontend Developer - Unified Mentor</li>
+                            <li><span>Internship - 2023</span><br>Web Development - PHN Technology</li>
+                            <li><span>Internship - 2022</span><br>Web Development - Internshala</li>
+                        </ul>
+                    </div>
+                    <div class="content" id="education">
+                        <ul>
+                            <li><span>B.Tech CSE - 2023</span><br>Studied web development and programming basics</li>
+                            <li><span>HSC - 2019</span><br>Science Stream - Junior College</li>
+                            <li><span>SSC - 2017</span><br> High School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------------------Services-------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h2 class="sub-title"> My Services</h2>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2> Web Design</h2>
+                    <p>I design clean and attractive websites that look good on phones, tablets, and computers. My goal
+                        is to make websites easy to use and visually appealing for everyone.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-laptop-code"></i>
+                    <h2> Frontend Development</h2>
+                    <p>I build the part of websites that users see and interact with using HTML, CSS, and JavaScript. My
+                        focus is on creating fast, responsive, and interactive websites.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-object-group"></i>
+                    <h2>UI/UX Design</h2>
+                    <p> I design website layouts that are easy to use and visually appealing. My goal is to create
+                        smooth user experiences that make visitors stay longer and enjoy the site.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------portfolio-------------------------------------->
+    <div id="Projects">
+        <div class="container">
+            <h2 class="sub-title"> My Work</h2>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.jpg">
+                    <div class="layer">
+                        <h3>Spotify App Clone</h3>
+                        <p>A static clone of Spotify's user interface built using HTML and CSS. </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.jpg">
+                    <div class="layer">
+                        <h3>Photography Web Page</h3>
+                        <p>A responsive photography website designed using HTML and CSS.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.jpg">
+                    <div class="layer">
+                        <h3> Personal Portfolio Website</h3>
+                        <p>A personal portfolio website to present my skills, projects, and experience as a frontend
+                            developer. </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------contact---------------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h2 class="sub-title"> Contact Me</h2>
+                    <p> <i class="fa-solid fa-paper-plane"></i>xyz@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9188888888</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="Ankita%20Resume.pdf" download="Ankita_Resume.pdf" class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Enter your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Frontend Developer', 'Web Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script src="app.js"></script>
+</body>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyk-a1Aieo0O5Bytpq3IIM_CE8sTB4zp3USyo8cq05hdVAVdTiRY5yti6oQiqEb2F1TUQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = " Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML=""
+        },3000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</html>
